@@ -17,7 +17,6 @@ const calendarController = require('./Controllers/CalendarControllers');
 
 app.use('/api/calendar', calendarController);
 
-// MongoDB connection
 mongoose.connect(process.env.MONGODB_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true
